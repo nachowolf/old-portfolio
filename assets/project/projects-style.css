@@ -1,0 +1,14 @@
+.logo img{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.first img{
+  width: 100%;
+}
+
+a:hover {
+    background-color: green;
+  }
