@@ -29,6 +29,10 @@
   border-style: solid;
 }
 
-a:hover {
-    background-color: green;
+a {
+    color: green;
+  }
+
+  a:hover{
+    color: red;
   }

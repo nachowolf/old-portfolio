@@ -1,9 +1,10 @@
 
 .button{
   width: 40%;
-  background-color: white;
+  background-color: green;
     color: black;
     border: 2px solid #555555;
+
   text-align: center;
   float: right;
   }
