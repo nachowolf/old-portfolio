@@ -1,62 +1,157 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="./assets/shared-css/topnav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./assets/shared-css/social.css">
-    <link rel="stylesheet" href="./assets/home/home-style.css">
-    <link rel="stylesheet" href="./assets/shared-css/normalize.css">
-    <link rel="stylesheet" href="./assets/shared-css/skeleton.css">
-    <meta charset="utf-8">
-    <title>Profile Home</title>
-  </head>
-  <body>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>💻Nathri Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/project.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
+</head>
+<body>
+<div class='hero' id='hero'>
+<div class='hero-card'>
 
-    <div class="topnav">
-      <img src="./assets/shared-css/nj.png" alt="logo">
-      <a href="./assets/contact/contact.html">Contact</a>
-      <a href="./assets/cv/cv.html">CV</a>
-      <a href="./assets/project/projects.html">Projects</a>
-      <a href="./index.html">Home</a>
+    <img src="./assets/prog.jpg" alt="">
+
+    <h1>Nathri Jacobs</h1>
+    <h2>Entry Level Software Developer</h2>
+    <span id='codex'><a href="http://www.projectcodex.co/" target="_blank"><h3>CodeX</h3></a></span>
+    <div class='social'>
+        <a href="https://github.com/nachowolf" target='_blank'><i class='fab fa-github fa-3x'></i></a>
+
+        <a href="https://www.facebook.com/nathri.jacobs" target='_blank'><i class='fab fa-facebook fa-3x'></i></a>
+
+        <a href="https://twitter.com/NATHRIJACOBS" target="_blank"><i class='fab fa-twitter fa-3x'></i></a>
     </div>
-<br>
-<div class="container">
-    <div class="six columns" id="about-me"><img src="./assets/home/pic.png" alt="profile">
-    <div class="heads"><h2>Nathri Jacobs</h2>
-<h4>Advanced Novice Developer</h4></div>
+</div>
 
-  </div>
-<div class="six columns">
-  <h2>Nathri Jacobs</h2>
-    <h4>About Me</h4>
-    <p><i>"Life is not a matter of holding good cards, but sometimes playing a poor hand well"</i> - <b>Jack London</b></p>
-    <p>Who am I? I'm someone who enjoys learning and doing something new even if it's a bit out of my comfort zone. I enjoy Video
-      Games and playing with Computers and occasionally trying something new in the kitchen. I enjoy reading a good book
-    in my spare time or just playing on my guitar. </p>
-    <p>I strive towards being Punctual, Responsible and Reliable. I'm an honest person who believes that respect is
-      not something that needs to be earned, Respect should be something everyone should have unless given a reason for it to be taken away.</p>
-      <p>I'm still new to coding but I am capable of doing quite a lot with just what I know and I am constantly
-        learning, improving and building on what I need to. Currently the only programming languages I know are HTML/CSS, Javascript and Python3</p>
-        <p>I enjoy meaningful, interesting and knowlegable conversations so if you would like to talk about complex
-          things like building rockets or simple things like how to tie your shoelaces or even if you're just
-          interested in hanging out and playing video games then feel free to contact me.<p/>
+</div>
+<!-- <span id='top'></span> -->
+<nav>
+    <ul>
+<li><a href="#top"><i class="fas fa-h-square"> Home</i></a></li>        
+<li><a href="#about-me"><i class='fas fa-user'> About Me</i></a></li>
+<li><a href="#projects"><i class="fas fa-project-diagram"> Projects</i></a></li>
+<li><a href="#cv"><i class='far fa-address-card'></i> CV</a></li>
+<li><a href="#funstuff"><i class='far fa-address-card'></i> FuNsTuFf</a></li>
+
+</ul>
+</nav>
+
+<div class='boxes'>
+    <img src="./assets/home.jpg" alt="computer">
+    <h5>Photo by <a href='https://unsplash.com/@nkachanovskyyy' target="_blank">Nikita Kachanovsky</a> on <a href='https://unsplash.com/'>Unsplash</a>.</h5>
+
+    <header><h1>Welcome!</h1></header>
+
+   <div class='about' id='about-me'>
+        <h2>About Me</h2>
+        <i>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." - <strong>Linus Torvalds</strong></i>
+        <p>Hello fellow human, my name is Nathri and I'm an entry level software developer. I'm someone who enjoys learning and trying new things which is kinda what got me into coding. I'm and avid gamer and really love playing video games and messing with game engines. I try to keep myself well rounded so I can talk about almost anything. If you're looking for someone to just talk to or play video games feel free to get into contact with me.</p>
+   </div>
+
+   <div class='projects' id='projects'>
+
+                <h2>Projects</h2>
+<p>These are some projects I've done at codex.</p>
+   <div class='flipcard'>
+       <div class='flipcard-inner'>
+           <div class='front'>
+                 <img src="./assets/greet.png" alt="">
+                <h2>Greeter webApp</h2>
+           </div>
+           <div class='back'>
+               <a href="https://nathri-greeter-webapp.herokuapp.com/" target='_blank'><h1>Greeter webApp</h1></a>
+               <p>This app was built using nodeJs and ExpressJs. It takes in a name and a selected language and greets the name in the selected language.</p>
+
+               <p>It also lists all the names thats been greeted and how much times with the option to reset the database tables or dynamically delete names.</p>
+               <a href="https://github.com/nachowolf/greet-web-form" target='_blank'><i class="fab fa-github"></i> See code on github</a>
+
+               <i class="fab fa-node-js"></i>
+
+           </div>
+       </div>
+   </div>
+
+   <div class='flipcard'>
+    <div class='flipcard-inner'>
+        <div class='front'>
+               <img src="./assets/plate.png" alt="">
+         <h2>Registration webApp</h2>
+        </div>
+        <div class='back'>
+            <a href="https://nathri-registration-webapp.herokuapp.com/" target='_blank'><h1>Registration webApp</h1></a>
+            <p>This app was built using nodeJs and ExpressJs. It takes in a license plate number from the Western Cape and displays it. The App also allows you to filter the plates depending on its code location if a plate from that specific location has been added. </p>
+
+            <p>It also has the option to reset the database tables or dynamically delete plates.</p>
+            <a href="https://github.com/nachowolf/registration_numbers_webapp" target='_blank'><i class="fab fa-github"></i> See code on github</a>
+            <i class="fab fa-node-js"></i>
+        </div>
+    </div>
+</div>
+
+<div class='flipcard'>
+    <div class='flipcard-inner'>
+        <div class='front'>
+            <img src="./assets/bill.png" alt="">
+            <h2>Settings bill webApp</h2>
+        </div>
+        <div class='back'>
+            <a href="https://quiet-beyond-60582.herokuapp.com/" target='_blank'><h1>Settings bill webApp</h1></a>
+            <p>This webApp is used to calculate mobile usage bills. It takes in the price of sms and calls and takes in a warning level and critical level. If the warning level is reached it changes the total to orange and if critical is reached it changes the total to red and stops incrementing</p>
+
+            <p>The app also records the all the values that has been added with a time stamp.</p>
+            <a href="https://github.com/nachowolf/settings-bill-expressjs" target='_blank'><i class="fab fa-github"></i> See code on github</a>
+            <i class="fab fa-node-js"></i>
+
+        </div>
+    </div>
 </div>
 
 
-  <a href="./assets/contact/contact.html"><button class="button" type="button" name="button">Contact</button></a>
+   </div>
 
-<div class="twelve columns">
-<!-- Add font awesome icons-->
-<a href="https://www.facebook.com/nathri.jacobs" class="fa fa-facebook"></a>
-<a href="https://twitter.com/NATHRIJACOBS" class="fa fa-twitter"></a>
-<a href="https://plus.google.com/u/0/116826299762223671451" class="fa fa-google"></a>
-<a href="https://www.linkedin.com/in/nathri-jacobs-b5ab8b160/" class="fa fa-linkedin"></a>
-<a href="https://www.instagram.com/nathri.j/" class="fa fa-instagram"></a>
-<a href="https://za.pinterest.com/nathrijacobs/" class="fa fa-pinterest"></a>
-<a href="https://www.reddit.com/user/NachoBits03/" class="fa fa-reddit"></a>
-<a href="https://github.com/nachowolf"class="fa fa-github"></a>
+   <div class='cv' id='cv'>
+        <h2>CV</h2>
+<a href="./assets/nathri-cv.pdf" target="_blank" class='cv-view'><i>View my CV</i></a>
+
+<a href="./assets/nathri-cv.pdf" download class='cv-download'><i>Download my CV</i></a>
+
+<a href="https://docs.google.com/document/d/1q40_ybeVKKr0hFupZ_gYGEq6HzHMoj2dnaoIaNe_9VE/edit?usp=sharing" target='_blank' class='cv-google'><i>google doc</i></a>
+   </div>
+
+   <div class='funstuff' id='funstuff'>
+    <h2>Funstuff</h2>
+<a href="https://codepen.io/nachowolf/pen/QVPJmr" target='_blank'><i>View bobby's code on codepen</i></a>
+    <div class="ghost">
+            <h3>Bobby the scary ghost</h3>
+            <div class='ghost-body'>
+    
+                    <div class='left-eye'>
+                      <div class='left-pupil'></div>
+                    </div>
+                    
+                    <div class='right-eye'>
+                      <div class='right-pupil'></div>
+                    </div>
+                    
+                    <div class='trail-one'></div>
+                    <div class='trail-two'></div>
+                    <div class='trail-three'></div>
+                    <div class='trail-four'></div>
+                    
+                  </div>
+                  
+                  <div class="shadow"></div>
+    </div>
+
+
+
 </div>
 </div>
-  </body>
+
+</body>
 </html>

@@ -1,0 +1,150 @@
+.ghost-body{
+  position: absolute;
+  top: 16.5%;
+  width: 10vw;
+  height: 25vh;
+  background: white;
+  border-radius: 50% 50% 0 0;
+  z-index: 4;
+  animation:bob 2s infinite linear forwards;
+
+}
+.left-eye{
+  position: absolute;
+  background: white;
+  width: 20%;
+  height: 23%;
+  top: 25%;
+  left: 25%;
+  border:solid;
+  border-radius: 50%;
+  z-index: 3;
+
+}
+.right-eye{
+  position: absolute;
+  background: white;
+  width: 20%;
+  height: 23%;
+  top: 25%;
+  right: 25%;
+  border:solid;
+  border-radius: 50%;
+  z-index: 2;
+
+}
+.left-pupil{
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  top: 35%;
+  left: 36%;
+  border-radius: 50%;
+  background: #27354A;
+  animation:look 10s linear infinite;
+
+}
+
+.right-pupil{
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  top: 35%;
+  left: 36%;
+  border-radius: 50%;
+  background: #27354A;
+  animation:look 10s linear infinite;
+
+}
+
+.trail-one{
+  position:absolute;
+  height:30%;
+  width:26%;
+  background-color:white;
+  bottom:-20%;
+  left:-3%;
+  z-index:2;
+  border-radius:0 0 50% 50%;
+  transform:rotateZ(10deg);
+
+}
+.trail-two{
+  position:absolute;
+  height:25%;
+  width:26%;
+  background-color:white;
+  bottom:-15%;
+  left:24%;
+  z-index:2;
+  border-radius:0 0 50% 50%;
+    transform:rotateZ(8deg);
+
+}
+.trail-three{
+  position:absolute;
+  height:28%;
+  width:26%;
+  background-color:white;
+  bottom:-18%;
+  right:24%;
+  z-index:2;
+   border-radius:0 0 50% 50%;
+    transform:rotateZ(-8deg);
+
+}
+.trail-four{
+  position:absolute;
+  height:25%;
+  width:26%;
+  background-color:white;
+  bottom:-20%;
+  right:-2.5%;
+  z-index:2;
+
+  border-radius:0 0 50% 50%;
+  transform:rotateZ(-10deg);
+
+}
+
+.shadow{
+  position:absolute;
+  width:10vw;
+  height:20%;
+  background-color:#333332;
+  z-index:2;
+  bottom:-80%;
+  border-radius:50%;
+  backface-visibility: hidden;
+  animation:shadowed 2s linear infinite;
+}
+
+@keyframes move {
+  0% {transform:translateX(0%)}
+  50% {transform:translateX(100%)}
+  100% {transform:translateX(0%)}
+}
+
+@keyframes look{
+  0% {transfomr:translateX(0%)}
+  25% {transform:translateX(100%)}
+  50% { transform:translateX(0%)}
+  75% { transform:translateX(-100%)}
+  100%{transform:translateX(0%)}
+}
+
+@keyframes bob{
+  0% {transform:translateY(20%)}
+  25% {transform:translateY(50%)}
+  50% { transform:translateY(20%)}
+  75% { transform:translateY(50%)}
+  100%{transform:translateY(20%)}
+}
+
+@keyframes shadowed{
+  0% {transform:scaleX(0.7)}
+  25% {transform:scaleX(1.5)}
+  50% { transform:scaleX(0.7)}
+  75% { transform:scaleX(1.5)}
+  100%{transform:scaleX(0.7)}
+}
