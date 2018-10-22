@@ -29,10 +29,44 @@
   border-style: solid;
 }
 
-a {
+/* a {
     color: green;
-  }
+  } */
 
-  a:hover{
+  /* a:hover{
     color: red;
-  }
+  } */
+
+  #myprojnav a {
+      position: absolute; /* Position them relative to the browser window */
+      left: 340px; /* Position them outside of the screen */
+      transition: 0.3s; /* Add transition on hover */
+      padding: 15px; /* 15px padding */
+      width: 5px; /* Set a specific width */
+      text-decoration: none; /* Remove underline */
+      font-size: 20px; /* Increase font size */
+      color: white; /* White text color */
+      border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#myprojnav a:hover {
+    left: 360px; /* On mouse-over, make the elements appear as they should */
+    width: 350px;
+    height: 100%
+    
+}
+#about {
+    top: 20px;
+    background-color: #4CAF50;
+
+}
+.project{
+  position: fixed;
+  border: 2px solid;
+  border-color: green;
+  top: 105px;
+  left: 10px;
+  height: 100px;
+  width: 350px;
+  background-color:rgb(14, 19, 13)
+}
