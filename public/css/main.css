@@ -1,278 +1,50 @@
-
-body{
-    position:absolute;
-    text-align:center;
-    width:100%;
-    padding-top:40px;
-    background-color:#414a4c;
-    height:2000x;
-    
+.main{
+    margin-top:10vh;
 }
-
-body a:hover{
-color:rgb(20,57,255);
-}
-
-.hero-card{
-    position: fixed;
+.card-body{
     text-align: center;
-    float:left;
-    width:25%;
-    border:solid;
-    border-radius: 5%;
-    background-color:#232b2b;
-    box-shadow: 10px 10px 10px 0px black;
-    padding:5px;
-    z-index: 2;
-
 }
 
-.hero-card h1, .hero-card h2{
-    color:black;
-    font-weight: bold;
-}
-.hero-card img{
-    position: relative;
-    margin-top:5px;
-    width:60%;
-    border-radius: 20%;
-    box-shadow: 10px 10px 10px 0px black;
-}
-
-#codex a{
-    color:#74ee15;
-}
-
-#codex a:hover{
-    color: rgb(20,57,255);
-}
-
-.intro{
-    width:20%;
-    left:25%;
-}
-
-a .fa-github{
-    color:black;
-}
-
-a .fa-facebook{
-    color: #3B5998
-}
-
-a .fa-twitter{
-    color:#00aced;
-}
-
-a .fa-github:hover, a .fa-facebook:hover, a .fa-twitter:hover{
-    color: rgb(20,57,255);
-}
-
-nav{
-    position:sticky;
-    top:10px;
-    width:70%;
-    background-color:#232b2b;
-    float:right;
-    margin-right:2%;
-    text-align:left;
-    height:50px;
-    border:solid;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 10px 10px 10px 0px black;
-    z-index: 6;
-}
-
-ul{
-    text-align: left;
-    overflow: auto;
-}
-
-li {
-    display: inline-block;
-    list-style-type: none;
-    padding-left:20px;
-  }
-
-  li a{
-    color:red;
-    font-weight: bold;
-  }
-
-
-  .boxes{
-    position: relative;
-    width:70%;
-    margin-right:2%;
-    top:20px;
-    background-color: gray;
-    float:right;
-    z-index:1;
-  }
-
-  .boxes h5{
-      position: relative;
-      float:right;
-      margin-right:10px;
-      color:white;
-      margin-top:-30px;
-      z-index:2;
-}
-
-  .boxes img{
-      position: relative;
-      width:100%;
-      height:300px;
-      z-index: 1;
-      backface-visibility: hidden;
-  }
-
-  .about {
-    position:solid;
-    display: block;
-    width: 100%;
-text-align: center;
-    padding-top: 80px; 
-    margin-top: -70px;
- }
-
- .about i{
-     font-weight: bold;
- } 
-
- .about p{
-     padding: 0 20px 0 20px;
-     font-size: 20px; 
- }
-
- .boxes h2{
-     padding:50px;
-     text-decoration: underline;
- }
-
-.projects{
-    position:solid;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding-top: 80px; 
-    margin-top: -70px;
-}
-
-.cv{
-    position:solid;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding-top: 80px; 
-    margin-top: -70px;  
-}
-
-.funstuff{
-    position:solid;
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding-top: 80px; 
-    margin-top: -70px;  
-}
-
-.flipcard{
-    background: transparent;
-    display:inline-block;
-    width:27%;
-    height: 55vh;
-    border:solid;
-    perspective:1000px;
-    margin-left:30px;
-    margin-top:30px;
-}
-
-.flipcard a{
-    color: white;
-}
-
-.flipcard a:hover{
-    color: rgb(20,57,255);
-}
-
-.flipcard-inner{
-    position: relative;
-    width:100%;
-    height:100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-.flipcard:hover .flipcard-inner{
-    transform: rotateY(180deg);
-}
-
-.front, .back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.front{
-    background-color: #bbb;
-    color: black;
-    backface-visibility: hidden;
-}
-.front h2{
-position: relative;
-margin-top:-40px; 
-}
-
-.front img{
-    width:80%;
-    height: 50%;
-    padding-top:5px;
-}
-
-.back{
-    background-color: dodgerblue;
+.footer{
+    background-color:black;
     color:white;
-    transform:rotateY(-180deg);
-
 }
 
-.cv-view, .cv-download, .cv-google{
-    position: relative;
-    display: inline-block;
-    width:27%;
-    border:solid;
-    height: 5vh;
-    padding-top: 2.5vh;
-    margin-left:30px;
-    border-color:black
+.foot{
+    margin-top:5vh;
 }
 
-.cv a{
-    color: black;
-    text-decoration: none;
-    background-color: #bbb;
+.footer-column{
+    margin-left:50px;
+}
+body{
+    height:2000px;
+}
+.card{
+    top:8vh;
+    left:5vw;
+    background-color:#343a40;
+    border-color:#343a40;
+    color:white;
+    text-decoration: underline;
 }
 
-.cv a:hover{
-    color: rgb(20,57,255);
-    text-shadow: 1px 1px black;
-    box-shadow: 2px 2px black;
+.
+
+.main-text{
+    text-align:center;
+    background-color: silver;
 }
 
-.ghost{
-    width: 80%;
-    height: 200px;
-    position: relative;
-    top:-50px;
-      display: block;
-      background: none;
-      animation:move 10s infinite linear forwards;
+.hero img{
+    width:100%;
+    height:40vh;
 }
 
-.ghost h3{
-    margin-left:-500px;
-    margin-top:150px;
+.container-fluid{
+    z-index: 10;
+}
+
+.projector{ 
+    z-index:1;
 }

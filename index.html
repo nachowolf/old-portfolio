@@ -5,153 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>💻Nathri Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/bootstrap-css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./public/css/fontAwesome/all.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./public/css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./public/css/project.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/css/particle.css">
+    <body>
+   
+   
+<div class="container-fluid">
+        <canvas id="projector">Your browser does not support the Canvas element.</canvas>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">💻</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav ml-auto justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
 
-</head>
-<body>
-<div class='hero' id='hero'>
-<div class='hero-card'>
+        </div>
+      </nav>
 
-    <img src="./assets/prog.jpg" alt="">
-
-    <h1>Nathri Jacobs</h1>
-    <h2>Entry Level Software Developer</h2>
-    <span id='codex'><a href="http://www.projectcodex.co/" target="_blank"><h3>CodeX</h3></a></span>
-    <div class='social'>
-        <a href="https://github.com/nachowolf" target='_blank'><i class='fab fa-github fa-3x'></i></a>
-
-        <a href="https://www.facebook.com/nathri.jacobs" target='_blank'><i class='fab fa-facebook fa-3x'></i></a>
-
-        <a href="https://twitter.com/NATHRIJACOBS" target="_blank"><i class='fab fa-twitter fa-3x'></i></a>
-    </div>
-</div>
-
-</div>
-<!-- <span id='top'></span> -->
-<nav>
-    <ul>
-<li><a href="#top"><i class="fas fa-h-square"> Home</i></a></li>        
-<li><a href="#about-me"><i class='fas fa-user'> About Me</i></a></li>
-<li><a href="#projects"><i class="fas fa-project-diagram"> Projects</i></a></li>
-<li><a href="#cv"><i class='far fa-address-card'></i> CV</a></li>
-<li><a href="#funstuff"><i class='far fa-address-card'></i> FuNsTuFf</a></li>
-
-</ul>
-</nav>
-
-<div class='boxes'>
-    <img src="./assets/home.jpg" alt="computer">
-    <h5>Photo by <a href='https://unsplash.com/@nkachanovskyyy' target="_blank">Nikita Kachanovsky</a> on <a href='https://unsplash.com/'>Unsplash</a>.</h5>
-
-    <header><h1>Welcome!</h1></header>
-
-   <div class='about' id='about-me'>
-        <h2>About Me</h2>
-        <i>"Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program." - <strong>Linus Torvalds</strong></i>
-        <p>Hello fellow human, my name is Nathri and I'm an entry level software developer. I'm someone who enjoys learning and trying new things which is kinda what got me into coding. I'm and avid gamer and really love playing video games and messing with game engines. I try to keep myself well rounded so I can talk about almost anything. If you're looking for someone to just talk to or play video games feel free to get into contact with me.</p>
-   </div>
-
-   <div class='projects' id='projects'>
-
-                <h2>Projects</h2>
-<p>These are some projects I've done at codex.</p>
-   <div class='flipcard'>
-       <div class='flipcard-inner'>
-           <div class='front'>
-                 <img src="./assets/greet.png" alt="">
-                <h2>Greeter webApp</h2>
+      <div class="row main">
+          <div class="col-sm-3">
+            <div class="card fixed-top" style="width: 20rem;">
+                <img src="./public/assets/profilePic.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h3 class="card-title">Nathri Jacobs</h3>
+                  <h4 class="occupation">Software Developer</h4>
+                  <p class="card-text">
+                      
+                      <a href="#"></a>
+                  </p>
+                  <a href="#" class="btn btn-primary">Download CV</a>
+                  <table class="table table-sm">
+                      <td><i class='fa fa-facebook'></i></td>
+                  </table>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm-8 main-column">
+           <div class="main-text">
+               <div class="hero">
+                   <img src="./public/assets/home.jpg" alt="">
+               </div>
            </div>
-           <div class='back'>
-               <a href="https://nathri-greeter-webapp.herokuapp.com/" target='_blank'><h1>Greeter webApp</h1></a>
-               <p>This app was built using nodeJs and ExpressJs. It takes in a name and a selected language and greets the name in the selected language.</p>
+          </div>
+      </div>
 
-               <p>It also lists all the names thats been greeted and how much times with the option to reset the database tables or dynamically delete names.</p>
-               <a href="https://github.com/nachowolf/greet-web-form" target='_blank'><i class="fab fa-github"></i> See code on github</a>
 
-               <i class="fab fa-node-js"></i>
-
-           </div>
-       </div>
-   </div>
-
-   <div class='flipcard'>
-    <div class='flipcard-inner'>
-        <div class='front'>
-               <img src="./assets/plate.png" alt="">
-         <h2>Registration webApp</h2>
-        </div>
-        <div class='back'>
-            <a href="https://nathri-registration-webapp.herokuapp.com/" target='_blank'><h1>Registration webApp</h1></a>
-            <p>This app was built using nodeJs and ExpressJs. It takes in a license plate number from the Western Cape and displays it. The App also allows you to filter the plates depending on its code location if a plate from that specific location has been added. </p>
-
-            <p>It also has the option to reset the database tables or dynamically delete plates.</p>
-            <a href="https://github.com/nachowolf/registration_numbers_webapp" target='_blank'><i class="fab fa-github"></i> See code on github</a>
-            <i class="fab fa-node-js"></i>
-        </div>
-    </div>
+      <footer class="footer fixed-bottom">
+          <div class="row foot">
+              <div class="col-sm-4 footer-column">
+                  <h3>Hello</h3>
+                <li>rfef</li>
+                </div>
+              <div class="col-sm-4 footer-column"></div>
+              <div class="col-sm-4 footer-column"></div>
+          </div>
+      </footer>
 </div>
-
-<div class='flipcard'>
-    <div class='flipcard-inner'>
-        <div class='front'>
-            <img src="./assets/bill.png" alt="">
-            <h2>Settings bill webApp</h2>
-        </div>
-        <div class='back'>
-            <a href="https://quiet-beyond-60582.herokuapp.com/" target='_blank'><h1>Settings bill webApp</h1></a>
-            <p>This webApp is used to calculate mobile usage bills. It takes in the price of sms and calls and takes in a warning level and critical level. If the warning level is reached it changes the total to orange and if critical is reached it changes the total to red and stops incrementing</p>
-
-            <p>The app also records the all the values that has been added with a time stamp.</p>
-            <a href="https://github.com/nachowolf/settings-bill-expressjs" target='_blank'><i class="fab fa-github"></i> See code on github</a>
-            <i class="fab fa-node-js"></i>
-
-        </div>
-    </div>
-</div>
-
-
-   </div>
-
-   <div class='cv' id='cv'>
-        <h2>CV</h2>
-<a href="./assets/nathri-cv.pdf" target="_blank" class='cv-view'><i>View my CV</i></a>
-
-<a href="./assets/nathri-cv.pdf" download class='cv-download'><i>Download my CV</i></a>
-
-<a href="https://docs.google.com/document/d/1q40_ybeVKKr0hFupZ_gYGEq6HzHMoj2dnaoIaNe_9VE/edit?usp=sharing" target='_blank' class='cv-google'><i>google doc</i></a>
-   </div>
-
-   <div class='funstuff' id='funstuff'>
-    <h2>Funstuff</h2>
-<a href="https://codepen.io/nachowolf/pen/QVPJmr" target='_blank'><i>View bobby's code on codepen</i></a>
-    <div class="ghost">
-            <h3>Bobby the scary ghost</h3>
-            <div class='ghost-body'>
-    
-                    <div class='left-eye'>
-                      <div class='left-pupil'></div>
-                    </div>
-                    
-                    <div class='right-eye'>
-                      <div class='right-pupil'></div>
-                    </div>
-                    
-                    <div class='trail-one'></div>
-                    <div class='trail-two'></div>
-                    <div class='trail-three'></div>
-                    <div class='trail-four'></div>
-                    
-                  </div>
-                  
-                  <div class="shadow"></div>
-    </div>
-
-
-
-</div>
-</div>
-
+<script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="./public/js/particle.js"></script>   
+<script src="./public/js/jquery-3.2.1.slim.js"></script>
+<script src="./public/js/popper.js"></script>
+<script src="./public/js/bootstrap-js/bootstrap.min.js"></script>
 </body>
 </html>
